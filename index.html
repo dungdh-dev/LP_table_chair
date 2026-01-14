@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tables & Chairs Optimization</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="header">
+  <img src="images/vgu_logo.png" alt="Logo" class="logo">
+  <h1>Linear Programming: Tables & Chairs (Dung H. Dinh - VGU)</h1>
+</div>
+
+
+
+  <div class="container">
+     <div class="inputs form-layout">
+
+      <h2>Input Parameters</h2>
+
+      <button onclick="solveLP()">Solve</button>
+
+      <label>Define Input
+ 
+      </label>
+
+      <label>Profit per Table
+        <input type="number" id="profitTable" value="6" />
+      </label>
+
+      <label>Profit per Chair
+        <input type="number" id="profitChair" value="8" />
+      </label>
+
+      <label>Labor hours per Table
+        <input type="number" id="laborTable" value="5" />
+      </label>
+
+      <label>Labor hours per Chair
+        <input type="number" id="laborChair" value="10" />
+      </label>
+
+      <label>Wood units per Table
+        <input type="number" id="woodTable" value="30" />
+      </label>
+
+      <label>Wood units per Chair
+        <input type="number" id="woodChair" value="20" />
+      </label>
+
+      <label>Total Labor Available
+        <input type="number" id="laborLimit" value="110" />
+      </label>
+
+      <label>Total Wood Available
+        <input type="number" id="woodLimit" value="300" />
+      </label>
+
+
+    </div>
+
+    <div class="output">
+      <h2>Optimal Solution</h2>
+
+
+      
+      <p>Tables: <span id="resultT">-</span></p>
+      <p>Chairs: <span id="resultC">-</span></p>
+      <p>Maximum Profit: <span id="resultZ">-</span></p>
+
+      <img src="images/table_chair.png" class="output-image">
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
