@@ -102,3 +102,19 @@ button:hover {
   height: auto;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 16px;     /* ↓ reduces header height */
+}
+
+.logo {
+  height: 60px;          /* ↓ reduce logo size */
+  width: auto;
+}
+
+.header h1 {
+  font-size: 18px;       /* ↓ smaller text */
+  margin: 0;             /* remove default spacing */
+}
